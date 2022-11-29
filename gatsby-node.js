@@ -50,7 +50,6 @@ exports.sourceNodes = async ({ actions }, configOptions) => {
       formNode.internal.contentDigest = contentDigest
       createNode(formNode)
     })
-    return
   } catch (err) {
     throw new Error(err)
   }
